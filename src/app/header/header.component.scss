@@ -1,0 +1,173 @@
+li {
+  list-style: none;
+}
+a {
+  cursor: pointer;
+}
+.checked {
+  color: orange;
+}
+.head {
+  background: #ffffff;
+  border: 1px solid #e4e4e4;
+
+  ul {
+    margin: unset;
+    padding: 0px 0px 0px 95px;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+
+    li {
+      list-style: none;
+      display: inline-block;
+      padding: 15px;
+      cursor: pointer;
+    }
+  }
+}
+
+.banner {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  img {
+    border-radius: 0.37rem !important;
+    margin: 0px 0px 0px 108px;
+    width: 83%;
+    height: 300px;
+  }
+}
+
+.container {
+  margin-left: 90px;
+  max-width: 1216px;
+
+  .card {
+    background-color: #fff;
+    border-radius: 0.37rem;
+
+    i {
+      color: #3167eb !important;
+      font-size: 2em;
+    }
+
+    h5 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      padding-top: 1rem !important;
+    }
+  }
+}
+
+header {
+  margin-top: 25px;
+  h3 {
+    font-weight: bold;
+  }
+}
+
+.productEffect {
+  transition: transform 0.2s;
+
+  figcaption {
+    padding: 18px 20px;
+  }
+  img {
+    text-align: center;
+  }
+  a {
+    font-family: inherit;
+  }
+}
+
+.productEffect:hover {
+  transform: scale(1.03);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+// media queries for small device
+
+@media only screen and (max-width: 600px) {
+  .head {
+    background: #ffffff;
+    border: 1px solid #e4e4e4;
+    width: 345px;
+    ul {
+      margin: unset;
+      font-family: "Inter", sans-serif;
+      font-weight: bold;
+      font-size: 15px;
+      padding: unset;
+      li {
+        list-style: none;
+        display: block;
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+
+  .banner {
+    img {
+      border-radius: 0.37rem !important;
+      width: 80%;
+      height: 120px;
+      margin-left: 32px;
+      margin-right: 40px;
+    }
+  }
+
+  .container {
+    margin: unset;
+
+    .card {
+      background-color: #fff;
+      border-radius: 0.37rem;
+      margin-left: 15px;
+      margin-right: 15px;
+
+      i {
+        color: #3167eb !important;
+        font-size: 2em;
+      }
+
+      h5 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+        padding-top: 1rem !important;
+        display: inline-block;
+        margin: 10px;
+      }
+    }
+  }
+
+  header {
+    margin-top: 25px;
+    text-align: center;
+    h3 {
+      font-weight: bold;
+    }
+  }
+
+  .productEffect {
+    transition: transform 0.2s;
+
+    margin-bottom: 20px;
+
+    figcaption {
+      padding: 18px 20px;
+    }
+    img {
+      text-align: center;
+    }
+    a {
+      font-family: inherit;
+    }
+  }
+}
+
+

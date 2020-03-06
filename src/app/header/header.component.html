@@ -1,0 +1,163 @@
+<div class="head">
+    <ul>
+        <li>
+            <a>
+
+                <img src="./assets/list.png">
+            </a>
+        </li>
+        <li>
+            <a> All category </a>
+        </li>
+
+        <li>
+            <a> Fashion </a>
+        </li>
+
+        <li>
+            <a> Supermarket</a>
+        </li>
+
+        <li>
+            <a> Electronics </a>
+        </li>
+
+        <li>
+            <a> Baby & Toys</a>
+        </li>
+
+        <li>
+            <a> Fitness sports</a>
+        </li>
+        <li>
+            <a> Clothing</a>
+        </li>
+        <li>
+            <a> Furnitures</a>
+        </li>
+    </ul>
+</div>
+
+
+<div class="banner">
+    <img src="assets/1.jpg">
+</div>
+
+
+
+
+
+<div class="container">
+    <div class="card card-body">
+        <div class="row">
+            <div class="col-sm-4">
+                <i class="fa fa-2x fa-truck" aria-hidden="true"></i>
+                <h5>
+                    Fast delivery
+
+                </h5>
+                <p>
+                    Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                </p>
+            </div>
+
+            <div class="col-sm-4">
+                <i class="fa fa-2x fa-landmark" aria-hidden="true"></i>
+
+                <h5>
+                    Creative Strategy
+
+                </h5>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                </p>
+            </div>
+
+            <div class="col-sm-4">
+                <i class="fa fa-2x fa-lock" aria-hidden="true"></i>
+
+                <h5>
+                    High secured
+
+                </h5>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<section class="section-content" >
+<div class="container">
+
+    <header class="section-heading">
+        <h3 class="section-title">
+            Popular products
+
+        </h3></header>
+        <div class="row"> 
+            <div class="col " *ngFor="let array of array" >
+
+                <div class="card card-product-grid productEffect" (click) = "pageDetail(array.productKey)">
+                    <a class="img-wrap" >
+
+                        <img src='{{array.imageUrl}}' height="200px">
+                    </a>
+                    <figcaption class="info-wrap">
+                        <a class="title">
+                            {{ array.productName}}
+                        </a>
+                        <div class="rating-wrap">
+                            <!-- <ul class="rating-stars">
+            <li class="stars-active" style="width:80%">
+                <i class="fa fa-star" ></i>
+            </li>
+        </ul>  -->
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked" ></span>
+                            <span class="fa fa-star"></span>
+                            <span class="label-rating text-muted"> {{array.reviews}} </span>
+                        </div>
+
+                        <div class="price mt-1">${{array.price}}.00</div>
+
+
+
+                    </figcaption>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

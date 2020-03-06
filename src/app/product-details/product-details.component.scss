@@ -1,0 +1,39 @@
+a {
+  cursor: pointer;
+}
+.checked {
+  color: orange;
+}
+
+.productEffect {
+  transition: transform 0.2s;
+
+  img {
+    text-align: center;
+    width: 40%;
+  }
+  a {
+    font-family: inherit;
+  }
+}
+
+.productEffect:hover {
+  transform: scale(1.03);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 600px) {
+  .productEffect {
+    transition: transform 0.2s;
+    margin: 10px;
+
+    // width: 40%;
+    img {
+      text-align: center;
+      width: 100%;
+    }
+    a {
+      font-family: inherit;
+    }
+  }
+}

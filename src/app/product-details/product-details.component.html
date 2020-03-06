@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="card">
+        <h1> {{array.productName}}</h1>
+    </div>
+    <div class="productEffect  card ">
+        <img src="{{array.imageUrl}}">
+    </div>
+
+
+    <a class="title">
+        {{ array.productName}}
+    </a>
+    <div class="rating-wrap">
+
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="label-rating text-muted"> {{array.reviews}} </span>
+    </div>
+
+    <div class="price mt-1">${{array.price}}.00</div>
+
+</div>
